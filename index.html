@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","name":"Clayful Studio","email":"samoct221000@gmail.com","areaServed":"IN"},
+{"@type":"Organization","name":"Clayful Studio","email":"Ishumittal1409@gmail.com","areaServed":"IN"},
 {"@type":"Product","name":"Paint-Your-Own Plaster Magnet Kit","brand":{"@type":"Brand","name":"Clayful Studio"},"description":"Non-toxic plaster figurines with a magnet back, paints and brush. A birthday return gift and party activity in one.","image":"images/kit-overview.jpg"},
 {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the minimum order?","acceptedAnswer":{"@type":"Answer","text":"10 pieces."}},{"@type":"Question","name":"Do you deliver across India?","acceptedAnswer":{"@type":"Answer","text":"Yes, pan India."}}]}]}
 </script>
@@ -34,7 +34,7 @@ nav a.l{color:var(--ink);text-decoration:none;margin-left:26px;font-size:.85rem;
 .btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:rgba(255,255,255,.35);transform:skewX(-20deg);transition:.6s}
 .btn:hover::after{left:140%}.btn:hover{background:var(--gold);border-color:var(--gold)}
 .btn.ghost{background:transparent;color:var(--ink)}.btn.ghost:hover{color:#fff}
-nav .cta{margin-left:26px;padding:10px 22px;color:#fff}
+nav a.l.cta{margin-left:26px;padding:10px 22px;color:#fff}
 .eyebrow{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:16px}
 h2{font-size:clamp(2.2rem,4.5vw,3.4rem)}h2 em,h1 em{color:var(--gold);font-style:italic}
 .head{text-align:center;max-width:640px;margin:0 auto 50px}.head p{color:var(--mute);margin-top:14px}
@@ -191,7 +191,7 @@ footer{background:var(--ink);color:#d9dde4;text-align:center;padding:56px 6vw}fo
 
 <section class="alt" style="padding:56px 6vw"><div class="seo"><h2 style="font-size:1.8rem;margin-bottom:14px">Premium return gifts and activity ideas for kids’ birthday parties</h2>
 <p>Looking for <b>premium return gifts for kids’ birthday parties</b>? Clayful Studio’s <b>paint-your-own plaster magnets</b> combine a <b>creative party activity</b> with a memorable <b>birthday party favour</b>. Ideal for <b>return gifts for 10, 20 or 50 children</b>, themed parties, school celebrations and playdates. Non-toxic <b>art and craft kits for kids</b>, delivered <b>pan India</b> including Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, Jaipur and Kolkata.</p></div></section>
-<footer><div class="logo">Clayful <i>Studio</i></div><p>Paint. Create. Play.</p><p><a href="mailto:samoct221000@gmail.com">samoct221000@gmail.com</a></p><p style="font-size:.8rem;opacity:.7">© <span id="yr"></span> Clayful Studio. All rights reserved.</p></footer>
+<footer><div class="logo">Clayful <i>Studio</i></div><p>Paint. Create. Play.</p><p><a href="mailto:Ishumittal1409@gmail.com">Ishumittal1409@gmail.com</a></p><p style="font-size:.8rem;opacity:.7">© <span id="yr"></span> Clayful Studio. All rights reserved.</p></footer>
 <div id="lb"><img alt=""></div>
 <script>
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);$('#yr').textContent=new Date().getFullYear();
@@ -227,9 +227,10 @@ $('#f').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,
  if(+d.pieces<10){m.textContent='The minimum order is 10 pieces.';q.value=10;return}
  d._subject='New Clayful Studio order: '+d.pieces+' pcs from '+d.city;d._template='table';d._captcha='false';
  const b=$('#go');b.disabled=true;b.textContent='Sending…';m.textContent='';
- try{const r=await fetch('https://formsubmit.co/ajax/samoct221000@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});
-  const j=await r.json();if(!r.ok||j.success==='false')throw 0;m.textContent='Thank you. We’ve received your request and will call you shortly.';f.reset();q.value=10}
- catch(x){m.innerHTML='We couldn’t send that. Please email <a href="mailto:samoct221000@gmail.com">samoct221000@gmail.com</a>.'}
+ try{const r=await fetch('https://formsubmit.co/ajax/Ishumittal1409@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});
+  const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)!=='true')throw j;m.textContent='Thank you. We’ve received your request and will call you shortly.';f.reset();q.value=10}
+ catch(x){const body=Object.entries(d).filter(([k,v])=>v&&k[0]!=='_').map(([k,v])=>k+': '+v).join('\n');
+  m.innerHTML=/activat/i.test((x&&x.message)||'')?'Almost there. Check Ishumittal1409@gmail.com for an activation email from FormSubmit, click its link, then press send again.':'We couldn’t send that automatically. <a href="mailto:Ishumittal1409@gmail.com?subject='+encodeURIComponent(d._subject)+'&body='+encodeURIComponent(body)+'">Click here to send your order by email instead</a>.'}
  b.disabled=false;b.textContent='Send order request'});
 </script>
 </body>
